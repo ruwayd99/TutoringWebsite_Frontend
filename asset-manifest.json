@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.io/TutoringWebsite_Frontend/static/css/main.b170a6ca.css",
+    "main.js": "/github.io/TutoringWebsite_Frontend/static/js/main.8ab0d47b.js",
+    "static/js/787.1ce12014.chunk.js": "/github.io/TutoringWebsite_Frontend/static/js/787.1ce12014.chunk.js",
+    "index.html": "/github.io/TutoringWebsite_Frontend/index.html",
+    "main.b170a6ca.css.map": "/github.io/TutoringWebsite_Frontend/static/css/main.b170a6ca.css.map",
+    "main.8ab0d47b.js.map": "/github.io/TutoringWebsite_Frontend/static/js/main.8ab0d47b.js.map",
+    "787.1ce12014.chunk.js.map": "/github.io/TutoringWebsite_Frontend/static/js/787.1ce12014.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b170a6ca.css",
+    "static/js/main.8ab0d47b.js"
+  ]
+}
