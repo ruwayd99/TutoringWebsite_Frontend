@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import './custom.css'; // Import your custom CSS file
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import './custom.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [fileList, setFileList] = useState([]);
 
   useEffect(() => {
-    fetch('https://tutoringwebsite-backend.onrender.com/files') // Update the URL to your backend API
+    fetch('https://tutoringwebsite-backend.onrender.com/files') // Connects to my backend API
       .then((response) => response.json())
       .then((data) => setFileList(data.files))
       .catch((error) => console.error('Error fetching files:', error));
@@ -22,7 +22,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', selectedFile);
 
-      fetch('https://tutoringwebsite-backend.onrender.com/upload', { // Update the URL to your backend API
+      fetch('https://tutoringwebsite-backend.onrender.com/upload', { 
         method: 'POST',
         body: formData,
       })
@@ -31,7 +31,7 @@ function App() {
           console.log(data);
           alert('File uploaded successfully!');
           setSelectedFile(null);
-          fetch('https://tutoringwebsite-backend.onrender.com/files') // Update the URL to your backend API
+          fetch('https://tutoringwebsite-backend.onrender.com/files') 
             .then((response) => response.json())
             .then((data) => setFileList(data.files))
             .catch((error) => console.error('Error fetching files:', error));
@@ -53,7 +53,7 @@ function App() {
         .then((response) => {
           if (response.status === 200) {
             alert('File deleted successfully!');
-            // Refresh the file list after deletion
+            // Refreshing file list after deletion
             fetch('https://tutoringwebsite-backend.onrender.com/files')
               .then((response) => response.json())
               .then((data) => setFileList(data.files))
@@ -70,9 +70,9 @@ function App() {
   };
 
   return (
-    <div className="container-wrapper"> {/* Wrap the header and file list section */}
+    <div className="container-wrapper"> 
       <div className="container">
-        <div className="header"> {/* Container with a light blue background */}
+        <div className="header"> 
           <h1>File Upload and Download</h1>
           <div className="input-container">
             <label className="upload-label">
