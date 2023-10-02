@@ -1,0 +1,127 @@
+/* Add your custom styles here */
+
+/* Center the content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightblue;
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen; /* Change to your desired background color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Style the container for the header and file list section */
+  .container-wrapper {
+    background-color: lightblue; /* Change to your desired background color */
+    padding-top: 50px; /* Add top padding to create space for header */
+  }
+  
+  /* Style the file input and buttons container */
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Adjust top margin */
+  }
+  
+  /* Style the custom select button */
+  label.select-label {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px; /* Add more margin between select and upload buttons */
+  }
+  
+  label.select-label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the custom upload button */
+  label.upload-label {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Add more margin between Choose File and Upload buttons */
+  }
+  
+  label.upload-label:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Style the file list section */
+  .file-list-section {
+    background-color: lightblue; /* Change to your desired background color */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Center-align the text in the file list section */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Style the file list table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px; /* Increase padding for better spacing */
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the download and delete buttons */
+  .btn-primary {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px; /* Adjust padding for better button size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add margin between download and delete buttons */
+  }
+  
+  .btn-primary:hover {
+    background-color: #138496;
+  }
+  
+  /* Style the delete button */
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px; /* Adjust padding for better button size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
